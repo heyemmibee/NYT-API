@@ -1,30 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+<head>
+  <meta charset="UTF-8">
+  <title>NYT Article Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <script src="https://use.fontawesome.com/9c086fd07c.js"></script>
+</head>
+    <body>
+        <div class="container">
+            <div class="row">
 
-    <title>NYT Search</title>
-  </head>
-  <body>
+            <div class="jumbotron text-center">
+            <h1><i class="fa fa-newspaper-o" aria-hidden="true"></i> NYT Article Search</h1>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Enter Your Search Here</div>
+                    <div class="panel-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="searchTerm">Search Term:</label>
+                            <input type="text" class="form-control" id="searchTerm" placeholder="Search Term">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numRecords">Number of Records to Retrieve:</label>
+                            <input type="number" class="form-control" id="numRecords" placeholder="5">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="startDate">Start Year (optional):</label>
+                            <input type="text" class="form-control" id="startDate" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endDate">End Year (optional):</label>
+                            <input type="text" class="form-control" id="endDate" >
+                        </div>
+
+                        <button type="submit" class="btn btn-default submit">Submit</button>
+                        <button type="reset"  class="btn btn-default reset">Clear Results</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-9">
+        <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Search Results</div>
+        <div class="panel-body" id="searchResults">
+                <form>
+                        <div class="form-group">
+                            <label for="searchTerm">Headline:</label>
+                            <input type="text" class="form-control" id="Headline" placeholder="Headline">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numRecords">Date:</label>
+                            <input type="text" class="form-control" id="Date" placeholder="Date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="startDate">Author:</label>
+                            <input type="text" class="form-control" id="Author" placeholder="Author">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endDate">Link:</label>
+                            <input type="text" class="form-control" id="Link" placeholder="Link">
+                        </div>
+                        <div class="form-group">
+                                <label for="endDate">Snippet:</label>
+                                <input type="text" class="form-control" id="Snippet" placeholder="Snippet">
+                        </div>
+                        <button type="search" class="btn btn-default submit">Search</button>
+                        <button type="reset"  class="btn btn-default reset">Clear Results</button>
+                </form>
+           
+        </div>
+        
+        <script type="text/javascript" src="./assets/javascript/nyt.js"></script>
+    </body>
+</html>
 
 
 
 
     <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./assets/javascript/nyt.js"></script>
-  </body>
-</html>
+    <script type="text/javascript" src="./assets/javascript/nyt.js"></script> -->
+
     
